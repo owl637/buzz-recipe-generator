@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // 環境変数からAPIキーを取得
-const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+const apiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
 export const generateImage = async (prompt) => {
   const url = "https://api.openai.com/v1/images/generations";
